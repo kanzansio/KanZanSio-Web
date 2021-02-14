@@ -1,6 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/kanzan/repositories/ZanSio-Web
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - export DEPLOYPATH=/home/kanzan/public_html/
+    - /bin/cp -a * $DEPLOYPATH
