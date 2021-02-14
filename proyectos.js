@@ -160,4 +160,4 @@ const touchSlide = (() => {
     }
     // call mobile on touch end
     slider.addEventListener("touchend", mobile)
-})()
+})() olakase
