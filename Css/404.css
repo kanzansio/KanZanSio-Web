@@ -29,7 +29,7 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #141414;
+  background: #000000;
   color: #fff;
   font-size: 7rem;
 }
@@ -153,7 +153,20 @@ div {
   background: rgba(10, 10, 10, 0.8);
   border: 1px solid #fafafa;
   box-sizing: border-box;
+
+  animation-name: lookme;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  border: 1px solid #fafafa75
 }
+@keyframes lookme {
+  0% {background-color: #7f07075e;}
+  50% {background-color: #00000041;}
+  100% {background-color: #7f07075e;}
+
+}
+
+
 .world .box .wall::before {
   content: "";
   position: absolute;
@@ -186,7 +199,7 @@ div {
   transform: rotateX(180deg) rotateZ(-90deg) translateZ(-1px);
   -webkit-animation: zeroFour 4000ms -2000ms linear infinite;
           animation: zeroFour 4000ms -2000ms linear infinite;
-}
+        }       
 .world .box .wall:nth-child(5) {
   transform: rotateY(90deg) translateZ(100px);
 }
@@ -208,32 +221,31 @@ div {
   0% {
     content: "4";
   }
-  33.3% {
-    content: "0";
+  33% {
+    content: "0"
   }
-  66.6% {
-    content: "4";
+  66% {
+    content: "4"
   }
+
   100% {
-    content: url('https://64.media.tumblr.com/758baf2f35d690ccf448714fde42bd47/0f6f0ddcd6890790-8c/s1280x1920/358d1df5cd50cc07fab6716ec18b80db3a9519d0.jpg')"
+    content: url(https://kanzan.site/Imagenes/kanzasio-blanco.svg)
   }
 }
-
-@keyframes zeroFour {S
+@keyframes zeroFour {
   0% {
     content: "4";
   }
-  33.3% {
-    content: "0";
+  33% {
+    content: "0"
   }
-  66.6% {
-    content: "4";
+  66% {
+    content: "4"
   }
   100% {
-    content: url('https://64.media.tumblr.com/758baf2f35d690ccf448714fde42bd47/0f6f0ddcd6890790-8c/s1280x1920/358d1df5cd50cc07fab6716ec18b80db3a9519d0.jpg')
+    content: url(https://kanzan.site/Imagenes/kanzasio-blanco.svg)
   }
 }
-
 @-webkit-keyframes roll {
   0% {
     transform: rotateZ(0deg);
